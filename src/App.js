@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import Header from './Header.js';
 import Main from './Main.js';
 import News from './News.js';
 import Game from './Game.js';
@@ -17,17 +18,24 @@ function App() {
       
 
     <Route path='/game'>
+       <Header/>
         <Game/>
+        <Footer/> 
      </Route>
+
      <Route path='/login'>
+     <Header/>
         <Login/>
+        <Footer/> 
      </Route>
 
      <Route path='/news'>
+     <Header/>
         <News/>
      </Route>
      
      <Route path='/'>
+       <Header/>
        <Main/>
        <Footer/>  
      </Route>

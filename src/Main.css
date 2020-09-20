@@ -5,7 +5,7 @@
 body{
    margin: 0;
    padding: 0;
-   background-color: darkslateblue;
+   background-color:#202e54 ;
     
 }
 
@@ -24,7 +24,7 @@ display: none;
 .button-menu{
     background: transparent;
     font-size: 40px;
-    margin-right: 30px;
+    margin-right: 10px;
     color: skyblue;
     font-weight: 700;
 }
@@ -130,13 +130,15 @@ display: none;
 
 @media screen and (max-width: 1600px) {
 
- .container{width: 990px;}
+ .container{width: 100%;}
  .main__news  {
     display: flex;
     flex-direction: column;
 }
 
-
+.header{
+    max-width: 1600px;
+}
 .news {
    
     flex: 1 1 90%;
