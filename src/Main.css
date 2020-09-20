@@ -159,7 +159,7 @@ display: none;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .container{width: 100%;}
+    .container{width: 600px;}
     .main__news  {
        display: flex;
        flex-direction: column;
@@ -183,6 +183,7 @@ display: none;
        max-width: 500px;
    }
    .header{
+       
        max-width: 600px;
    }
 

@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div>
               <footer className ="footer">
-        <div className ="container">
+    
             <div className ="footer__nav">
                 <div className ="footer__logo"><img src={logo} alt="logo" /></div>
                 <ul className="footer__menu">
@@ -16,8 +16,7 @@ function Footer() {
                     <li className ="footer__item"><a href="#" className="footer_link insta"></a></li>
                 </ul>
             </div>
-           
-        </div>
+ 
     </footer>
             
         </div>
