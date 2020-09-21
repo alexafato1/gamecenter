@@ -32,12 +32,13 @@ function Header() {
                 </ul>
                 <button className="button-menu" >МЕНЮ</button>
                 <div className='header__menu-popup'>
-                   
+                <ul className="open-menu">
                     <li className="">НОВОСТИ</li>
                     <li className="">ИГРЫ 1980х</li>
                     <li className="">ИГРЫ 1990х</li>
                     <li className="">ИГРЫ 2000х</li>
                     <li className="">Вход</li>
+                </ul>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ function Main() {
         <div className="container">
            
               
-            <div className="header__title"><h1 >RETRO GAMER CAFE</h1></div>
+            <div className="header__title"><h1 >GAMER CENTER</h1></div>
         </div>
          
     </div>
