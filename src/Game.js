@@ -1,7 +1,11 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState, useEffect, useRef} from 'react';
 import { Link} from 'react-router-dom';
 import './Game.css';
-import {db, auth} from './firebase'
+import {db, auth} from './firebase';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+
 
 function Game( {postId,decada}) {
     const [years, setYears] = useState([]);
@@ -14,6 +18,11 @@ function Game( {postId,decada}) {
           })
         }
     }, [])
+
+   const [index, setIndex] = useState(0);
+    
+
+
     
 
     return (
@@ -102,16 +111,32 @@ function Game( {postId,decada}) {
            </ul>
            </div> 
             <div className='game__container'>
+             
                <div className='game__decade'>
+      
 
                    <h1>{decada}</h1>
+                   
                     <div className='game__years'>
                     {years.map((year) => (
                      <p>
                      <strong>{year.name}</strong> 
-                    
-                     {year.img.map((i) => (
-                     <img src={i}></img>))}
+
+                     
+                     <div className='carousel' > 
+                     
+                     <img src={year.img[index]} alt='img'></img>
+                     { 
+                     index === year.img.length-1 ? 
+
+                     <button className='prev' onClick={() => setIndex(index - 1) }>PREV</button>:
+                     <button className='next' onClick={() => setIndex(index + 1) }>NEXT</button>
+                     }
+                   
+                     
+                     </div>
+                  
+
                      {year.text}
                      </p>
                       ))}
@@ -126,4 +151,4 @@ function Game( {postId,decada}) {
     )
 }
 
-export default Game;
+export default Game

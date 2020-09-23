@@ -49,6 +49,11 @@ body{
   width:100%;
 }
 
+.photo{
+    width:  500px;
+    height: 500px ;
+}
+
 @media screen and (min-width: 700px){
     .game__years p{
         font-size: 25px;
