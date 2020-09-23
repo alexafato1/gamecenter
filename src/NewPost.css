@@ -1,0 +1,25 @@
+.post__form{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: khaki;
+}
+
+#upload {
+    appearance: none;
+    width:  500px;
+    margin-bottom: 10px;
+    
+
+}
+
+#fileButton{
+   
+    width:  500px;
+    margin-bottom: 10px;
+}

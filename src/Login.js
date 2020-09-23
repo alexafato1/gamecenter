@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import {auth, db} from './firebase';
 import { Link, useHistory } from 'react-router-dom';
+import './Login.css';
 
 
 function Login() {
@@ -36,17 +37,17 @@ function Login() {
     return (
         
         <div className='login'>
-             <div className='login_container'>
+             <div className='login__container'>
             <h1>Sign in</h1>
             <form>
             <h5>E-mail</h5>
             <input value={email} onChange={event => setEmail(event.target.value)} type='email'/>
             <h5>Password</h5>
             <input  value={password} onChange={event => setPassword(event.target.value)} type='password'/>
-            <button onClick={login}  type='submit'  className='login_signButton'>SignIn</button>
+            <button onClick={login}  type='submit'  className='login__signButton'> регистация</button>
             </form>
            
-            <button onClick={register}  className='login_regicterButton'>Create your Account</button>
+            <button onClick={register}  className='login__regicterButton'>создать аккаунт</button>
           </div>
         </div>
     )
